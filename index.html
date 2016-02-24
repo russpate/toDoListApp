@@ -10,22 +10,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>ToDos</h1>
+      <h1>todos</h1>
         <div class="listBox"><!-- box for all lists -->
+          <form>
+            <input type="text" name="content" placeholder="create a to do :)" value="">
+          </form>
           <section class="listAll current"><!-- list of all to dos -->
-            <input type="text" name="creator" placeholder="create a to do :)" value="">
             <article class="toDo">
               <h2>This is a to do item</h2>
             </article>
           </section>
           <section class="listActive"><!-- list of active to dos -->
-            <input type="text" name="creator" placeholder="create a to do :)" value="">
             <article class="toDo">
               <h2>This is a to do item</h2>
             </article>
           </section>
           <section class="listComplete"><!-- list of completed to dos -->
-            <input type="text" name="creator" placeholder="create a to do :)" value="">
             <article class="toDo">
               <h2>This is a to do item</h2>
             </article>
@@ -33,10 +33,10 @@
         <nav class="toDoFooter">
           <ul>
             <li>0 items left</li>
-            <li>All</li>
-            <li>Active</li>
-            <li>Completed</li>
-            <li>Clear Completed</li>
+            <li><a rel="listAll" href="#">All</a></li>
+            <li><a rel="listActive" href="#">Active</a></li>
+            <li><a rel="listComplete" href="#">Completed</a></li>
+            <li><a rel="" href="#">Clear Completed</a></li>
           </ul>
         </nav>
       </div>

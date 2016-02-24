@@ -3,6 +3,75 @@
   padding: 0;
   box-sizing: border-box; }
 
+section {
+  display: none;
+  width: 100%; }
+
+.current {
+  display: inline-block; }
+
+.currentTab {
+  color: green; }
+
 .container {
   width: 50%;
   margin: 0 auto; }
+
+body {
+  background: white; }
+
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center; }
+
+p {
+  display: inline; }
+
+article {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 20px;
+  display: inline-block; }
+
+button.delete {
+  position: absolute;
+  right: 0; }
+
+.listAll {
+  background: yellow; }
+
+.listActive {
+  background: green; }
+
+.listComplete {
+  background: indianred; }
+
+.complete {
+  color: rgba(0, 0, 0, 0.15);
+  text-decoration: line-through; }
+
+input {
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  font-size: 24px;
+  color: red;
+  border: none;
+  background: #eee; }
+  input:placeholder {
+    color: gray; }
+
+.toDoFooter li {
+  display: inline;
+  list-style: none;
+  padding: 5px; }
+
+.toDoFooter {
+  margin: 20px 0; }

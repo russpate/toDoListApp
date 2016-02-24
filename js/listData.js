@@ -1,7 +1,14 @@
-var listData = [{
-  type: "album",
-  rel: "album-1",
-  class: "album-1",
-  albumTitle: "Black.",
-  albumCover: "img/black-1-thumb.jpg"
-}];
+var listData = [
+  {
+    content: "get milk",
+    complete: false
+  },
+  {
+    content: "go for a run",
+    complete: false
+  },
+  {
+    content: "learn to write better jquery",
+    complete: false
+  }
+];

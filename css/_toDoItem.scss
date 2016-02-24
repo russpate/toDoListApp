@@ -1,0 +1,36 @@
+p {
+    display: inline;
+}
+
+article {
+    display: inline-block;
+    width: 100%;
+    position:relative;
+    padding:20px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+
+}
+input[type="checkbox"]{
+  width:auto;
+  margin-right:20px;
+  display:inline-block;
+}
+button.delete{
+  position:absolute;
+  right:0;
+}
+.listAll {
+    background: yellow;
+}
+
+.listActive {
+    background: green;
+}
+
+.listComplete {
+    background: indianred;
+}
+.complete{
+  color:rgba(0,0,0,.15);
+  text-decoration:line-through;
+}
