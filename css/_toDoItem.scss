@@ -6,29 +6,57 @@ article {
     display: inline-block;
     width: 100%;
     position:relative;
-    padding:20px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.15);
+    padding:45px 0px;
+    border-bottom: 2px dashed rgba(0,0,0,0.15);
 
 }
 input[type="checkbox"]{
-  width:auto;
   margin-right:20px;
   display:inline-block;
+  box-shadow:none;
+  -webkit-appearance: none;
+  height:20px;
+  width:20px;
+  // background:#60AB52;
+  border:2px solid #60AB52;
+  outline:none;
+  border-radius:100%;
+  transition:.2s all;
+  cursor:pointer;
+  &:checked + label{
+    color:lightgray;
+    text-decoration:line-through;
+    transition:.2s all;
+  }
+  &:checked{
+    background:lightgray;
+    border:lightgray;
+
+  }
+  &:hover{
+    background:lightgray;
+    border:lightgray;
+  }
+
+}
+label{
+  font-size:30px;
+  color:#60AB52;
+  text-align:center;
 }
 button.delete{
   position:absolute;
-  right:0;
-}
-.listAll {
-    background: yellow;
-}
-
-.listActive {
-    background: green;
-}
-
-.listComplete {
-    background: indianred;
+  right:10px;
+  top:50%;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: lightgray;
+  outline: none;
+  transition:.2s all;
+  &:hover{
+    color:#F33434;
+  }
 }
 .complete{
   color:rgba(0,0,0,.15);

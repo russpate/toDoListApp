@@ -18,12 +18,22 @@ section {
   margin: 0 auto; }
 
 body {
-  background: white; }
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600; }
 
 h1 {
-  font-size: 36px;
-  font-weight: 100;
-  text-align: center; }
+  font-size: 72px;
+  text-align: center;
+  color: #333;
+  font-weight: 600; }
+
+nav a {
+  text-decoration: none;
+  color: lightgray;
+  transition: .2s all; }
+  nav a:hover {
+    color: #333; }
 
 p {
   display: inline; }
@@ -32,41 +42,73 @@ article {
   display: inline-block;
   width: 100%;
   position: relative;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  padding: 45px 0px;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.15); }
 
 input[type="checkbox"] {
-  width: auto;
   margin-right: 20px;
-  display: inline-block; }
+  display: inline-block;
+  box-shadow: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #60AB52;
+  outline: none;
+  border-radius: 100%;
+  transition: .2s all;
+  cursor: pointer; }
+  input[type="checkbox"]:checked + label {
+    color: lightgray;
+    text-decoration: line-through;
+    transition: .2s all; }
+  input[type="checkbox"]:checked {
+    background: lightgray;
+    border: lightgray; }
+  input[type="checkbox"]:hover {
+    background: lightgray;
+    border: lightgray; }
+
+label {
+  font-size: 30px;
+  color: #60AB52;
+  text-align: center; }
 
 button.delete {
   position: absolute;
-  right: 0; }
-
-.listAll {
-  background: yellow; }
-
-.listActive {
-  background: green; }
-
-.listComplete {
-  background: indianred; }
+  right: 10px;
+  top: 50%;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: lightgray;
+  outline: none;
+  transition: .2s all; }
+  button.delete:hover {
+    color: #F33434; }
 
 .complete {
   color: rgba(0, 0, 0, 0.15);
   text-decoration: line-through; }
 
-input {
+form input {
   width: 100%;
   padding: 20px;
   outline: none;
-  font-size: 24px;
-  color: red;
+  font-size: 30px;
+  color: #60AB52;
   border: none;
-  background: #eee; }
-  input:placeholder {
+  background: whitesmoke;
+  border-bottom: 2px dashed #60AB52;
+  text-align: center; }
+  form input:placeholder {
     color: gray; }
+
+form span {
+  font-weight: 200;
+  font-size: 12px;
+  color: lightgray;
+  margin: 20px 0;
+  margin-top: 20px; }
 
 .toDoFooter li {
   display: inline;

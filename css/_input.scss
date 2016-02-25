@@ -1,12 +1,21 @@
-input{
+form input{
   width:100%;
   padding:20px;
   outline:none;
-  font-size:24px;
-  color:red;
+  font-size:30px;
+  color:#60AB52;
   border:none;
-  background:#eee;
+  background:whitesmoke;
+  border-bottom:2px dashed #60AB52;
+  text-align:center;
   &:placeholder{
     color:gray;
   }
+}
+form span {
+    font-weight: 200;
+    font-size: 12px;
+    color: lightgray;
+    margin: 20px 0;
+    margin-top: 20px;
 }

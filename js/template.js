@@ -6,7 +6,19 @@ templates.item = [
     "<% if(complete) { %>",
     "checked",
     "<% } %>",
-    "/><p class='edit'><%= content %></p>",
-    "<button class='delete'>x</button>",
+    "/><label><%= content %></label>",
+    "<button class='delete'>remove</button>",
   "</article>"
+  ].join("");
+
+  templates.nav = [
+    "<ul>",
+      "<li class='itemsLeft'>",
+      listData.length,
+      " items left</li>",
+      "<li><a rel='listAll' href='#'>All</a></li>",
+      "<li><a rel='listActive' href='#'>Active</a></li>",
+      "<li><a rel='listComplete' href='#'>Completed</a></li>",
+      "<li class='clearCompleted'><a rel='' href='#'>Clear Completed</a></li>",
+    "</ul>"
   ].join("");
