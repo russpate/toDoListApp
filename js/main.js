@@ -41,6 +41,11 @@ var toDoPage = {
           toDoPage.addAllItems(completed);
         }
     });
+    $('section').on('click', '.delete', function (event) {
+      var idx = $(this).closest('article').data('idx');
+      toDoPage.deleteItem(idx);
+      toDoPage.addAllItems(toDoPage.getItem());
+    });
     $('.listBox').on('click','input[type="checkbox"]', function() {
       var index = $(this).parent().data('idx');
       listData[index].complete = !listData[index].complete;
@@ -94,16 +99,16 @@ getPostFromDom:  function() {
 
 
 // maybe this will delete allComplete?
-$('.clearComplete').on('click', '.delete', function (event) {
-
-  console.log("this is ", $(this));
-
-  listData.filter(function(el) {
-   return el.complete === true;
- });
-  deleteItem(idx);
-  addAllItems(getItem());
-});
+// $('.clearComplete').on('click', '.delete', function (event) {
+//
+//   console.log("this is ", $(this));
+//
+//   listData.filter(function(el) {
+//    return el.complete === true;
+//  });
+//   deleteItem(idx);
+//   addAllItems(getItem());
+// });
 
 
 
